@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import Swiper from "swiper";
-import { Navigation } from "swiper/modules"; // Import Navigation module
 import "swiper/swiper-bundle.css"; // This should work for older versions
 import "swiper/css"; // For v9 and above, use this for core styles
 import "swiper/css/navigation"; // Import Navigation styles
