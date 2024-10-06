@@ -1,0 +1,15 @@
+/* Default styles (mobile, tablet, etc.) */
+.home-banner {
+    background-color: #eeeeee;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  /* Laptop and larger screen styles */
+  @media (min-width: 992px) {
+    .home-banner {
+      background-image: url('/Image/homebanner.jpg'); /* Initial image for laptops */
+    }
+  }
+  

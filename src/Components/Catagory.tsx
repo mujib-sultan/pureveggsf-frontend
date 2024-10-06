@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Swiper from "swiper";
+import { Navigation } from "swiper/modules"; // Import Navigation module
 import "swiper/swiper-bundle.css"; // This should work for older versions
 import "swiper/css"; // For v9 and above, use this for core styles
 import "swiper/css/navigation"; // Import Navigation styles
@@ -6,7 +8,18 @@ import f from "../assets/Images/f.jpg";
 import v from "../assets/Images/v.png";
 
 function Catagory() {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const swiper = new Swiper(".swiper", {
+      modules: [Navigation], // Include Navigation module
+      slidesPerView: 1, // Change this to the number of slides you want visible
+      spaceBetween: 10, // Space between slides
+      navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+      },
+    });
+    console.log(swiper);
+  }, []);
 
   return (
     <section className="py-5 overflow-hidden">
