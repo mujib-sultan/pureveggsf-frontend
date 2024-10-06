@@ -1,4 +1,3 @@
-import React from "react";
 import HomeBanner from "./HomeBanner";
 import Catagory from "./Catagory";
 import BestSellingProducts from "./BestSellingProducts";

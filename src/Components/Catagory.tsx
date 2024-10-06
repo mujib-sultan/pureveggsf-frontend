@@ -8,17 +8,7 @@ import f from "../assets/Images/f.jpg";
 import v from "../assets/Images/v.png";
 
 function Catagory() {
-  useEffect(() => {
-    const swiper = new Swiper(".swiper", {
-      modules: [Navigation], // Include Navigation module
-      slidesPerView: 1, // Change this to the number of slides you want visible
-      spaceBetween: 10, // Space between slides
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
-    });
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <section className="py-5 overflow-hidden">
