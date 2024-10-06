@@ -16,8 +16,11 @@ const HomeBanner: React.FC = () => {
         <div className="row">
           <div className="col-lg-6 pt-5 mt-5">
             <h2 className="display-1 ls-1">
-              <span className="fw-bold " style={{ color: "#0599FB" }}>
-                PureVeggs
+              <span className="fw-bold" style={{ color: "#0599FB" }}>
+                <span style={{ color: "#0599FB" }}>Pure</span>{" "}
+                {/* Change "Pure" to blue */}
+                <span style={{ color: "#64BC6D" }}>Veggs</span>{" "}
+                {/* Change "Veggs" to green */}
               </span>{" "}
               Freshness at your <span className="fw-bold">Doorsteps</span>
             </h2>
@@ -89,7 +92,7 @@ const HomeBanner: React.FC = () => {
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
           <div className="col">
-            <div className="card border-0 bg-primary  rounded-5 p-4 text-light">
+            <div className="card border-0 bg-primary rounded-5 p-4 text-light">
               <div className="row align-items-center">
                 <div className="col-3 text-center">
                   <img src={fresh} height={60} alt="Fresh from farm" />
